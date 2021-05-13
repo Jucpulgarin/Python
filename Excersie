@@ -1,0 +1,20 @@
+Numero=int(input("Ingrese el numero :"))
+residuo=Numero%2
+print("Primero, veamos si el número es par o impar")
+if residuo==0:
+    print("El número es par")
+else:
+    print("El número es impar")
+    
+print("Ahora veamos si el número es primo o no")
+
+x=range(2,Numero)
+x=list(x)
+lista=list()
+for i in x:
+    residuo_p=Numero%i
+    lista.append(residuo_p)
+if 0 in lista:
+    print("El número es Compuesto")
+else:
+    print("El número es Primo")
